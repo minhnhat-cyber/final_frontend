@@ -1,13 +1,8 @@
-/* /src/index.css */
-
-@import "tailwindcss";
-
 
 :root {
-  font-family: Inter, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Arial, sans-serif;
-  color: #1e293b;
-  background: #f5f7fa;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  color: #172b49;
+  background: #f3f6fa;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +18,10 @@ body {
   min-height: 100vh;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
 }
 
@@ -34,4 +32,17 @@ button {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
 }
